@@ -1,9 +1,12 @@
-'use client'
+'use client';
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaMoon, FaSun } from "react-icons/fa";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
+
+// Dynamically import Lottie with SSR disabled
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export default function LottiePreviewer() {
   const [lottieFile, setLottieFile] = useState(null);
@@ -51,16 +54,16 @@ export default function LottiePreviewer() {
           }`}
       >
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-2xl font-semibold flex gap-1 justify-center items-center">openLottie Preview
-
-            <a href="https://github.com/naeemudheenp/openlottiepreviewer"> <FaGithub /></a>
-
+          <h1 className="text-2xl font-semibold flex gap-1 justify-center items-center">
+            openLottie Preview
+            <a href="https://github.com/naeemudheenp/openlottiepreviewer">
+              <FaGithub />
+            </a>
           </h1>
           <div
             onClick={() => setDarkMode(!darkMode)}
-            className="cursor-pointer bg-black text-white rounded-full p-2  transition-all hover:scale-110"
+            className="cursor-pointer bg-black text-white rounded-full p-2 transition-all hover:scale-110"
           >
-
             {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
           </div>
         </div>
@@ -98,7 +101,7 @@ export default function LottiePreviewer() {
             setLottieFile(null);
             setError(null);
           }}
-          className="w-full hover:text-black bg-black transition-all text-white rounded-md p-2 mt-4  hover:bg-white border  border-white hover:border-black"
+          className="w-full hover:text-black bg-black transition-all text-white rounded-md p-2 mt-4 hover:bg-white border border-white hover:border-black"
         >
           Reset
         </button>
@@ -106,4 +109,3 @@ export default function LottiePreviewer() {
     </div>
   );
 }
-
