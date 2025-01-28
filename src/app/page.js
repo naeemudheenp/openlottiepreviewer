@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { FaGithub, FaMoon, FaSun } from "react-icons/fa";
 import Lottie from "react-lottie";
 
 export default function LottiePreviewer() {
@@ -50,13 +51,18 @@ export default function LottiePreviewer() {
           }`}
       >
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-2xl font-semibold">openLottie Previewer</h1>
-          <button
+          <h1 className="text-2xl font-semibold flex gap-1 justify-center items-center">openLottie Preview
+
+            <a href="https://github.com/naeemudheenp/openlottiepreviewer"> <FaGithub /></a>
+
+          </h1>
+          <div
             onClick={() => setDarkMode(!darkMode)}
-            className="bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-600"
+            className="cursor-pointer bg-black text-white rounded-full p-2  transition-all hover:scale-110"
           >
-            Toggle {darkMode ? "Light" : "Dark"} Mode
-          </button>
+
+            {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+          </div>
         </div>
         <input
           type="file"
@@ -83,7 +89,7 @@ export default function LottiePreviewer() {
           </div>
         ) : (
           <p className="text-gray-500 text-sm text-center">
-            Upload a Lottie .json or .lottie file to preview it.
+            Upload a Lottie .json file to preview it.
           </p>
         )}
         <button
@@ -92,7 +98,7 @@ export default function LottiePreviewer() {
             setLottieFile(null);
             setError(null);
           }}
-          className="w-full bg-blue-500 text-white rounded-md p-2 mt-4 hover:bg-blue-600"
+          className="w-full hover:text-black bg-black transition-all text-white rounded-md p-2 mt-4  hover:bg-white border  border-white hover:border-black"
         >
           Reset
         </button>
