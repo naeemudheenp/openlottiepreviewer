@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "openLottie Preview",
-  description: "openLottie Preview",
+  title: "Online Lottie Previewer",
+  description: "Online Lottie Previewer: Compare and Preview Lottie JSON Animations in Different Players",
 };
 
 export default function RootLayout({ children }) {

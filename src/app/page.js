@@ -90,7 +90,7 @@ export default function LottiePreviewer() {
       >
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-2xl font-semibold flex gap-1 justify-center items-center">
-            openLottie Preview
+            Online Lottie Previewer
             <a href="https://github.com/naeemudheenp/openlottiepreviewer">
               <FaGithub />
             </a>
