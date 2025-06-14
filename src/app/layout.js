@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6480505866670634"
           crossorigin="anonymous"></script>
+        <link rel="canonical" href="https://openlottiepreviewer.com/" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
