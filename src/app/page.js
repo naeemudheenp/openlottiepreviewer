@@ -24,7 +24,7 @@ export default function LottiePreviewer() {
             </ul>
           </div>
         </section>
-        <div className=" md:h-full md:w-full  min-h-full transition-all duration-300">
+        <div className="min-h-[360px]  md:h-full md:w-full  transition-all duration-300">
           <LottiePicker />
         </div>
       </div>
