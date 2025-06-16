@@ -5,9 +5,9 @@ import LottiePicker from "@/components/lottie-picker";
 export default function LottiePreviewer() {
   return (
     <div
-      className={`flex flex-col items-center justify-center min-h-screen p-6`}
+      className={`flex flex-col items-center justify-center min-h-screen p-6 max-md:!px-2 max-md:!py-2`}
     >
-      <div className={`flex flex-col items-center justify-center min-h-screen p-6 flex-col md:flex-row`}>
+      <div className={`flex flex-col items-center justify-center min-h-screen p-6 flex-col md:flex-row max-md:!px-0`}>
         <section className="intro px-4 py-10 md:px-8 lg:px-16 max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:text-left text-center">
             Open Lottie Previewer
