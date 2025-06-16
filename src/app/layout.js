@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Online Lottie Previewer",
-  description: "Easily preview and compare Lottie animations in Online across dark and light themes. Perfect for designers and developers to test Lottie JSON files using lottie-react and react-lottie-player.",
+  description: "Preview Lottie JSON animations Online across different players and themes. Perfect for designers and developers to test Lottie JSON files using lottie-react and react-lottie-player in light and dark themes.",
   keywords: ['Lottie Previewer', 'Lottie JSON Viewer', 'lottie-react', 'React Lottie Player', 'Online Lottie Previewer', 'Open Lottie Previewer', 'Themes', 'Dark Mode', 'Light Mode', 'lottie players'],
   authors: [{ name: 'Naeemudheen P' }],
 };
