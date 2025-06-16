@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <link rel="canonical" href="https://openlottiepreviewer.com/" />
       </head>
       <body
-        className={` antialiased bg-white`}
+        className={` antialiased bg-white min-h-screen  `}
       >
         <Header />
         <Analytics />
