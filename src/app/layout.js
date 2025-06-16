@@ -1,16 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Online Lottie Previewer",
@@ -23,13 +16,17 @@ export default function RootLayout({ children }) {
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6480505866670634"
           crossorigin="anonymous"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6480505866670634"
+          crossorigin="anonymous"></script>
         <link rel="canonical" href="https://openlottiepreviewer.com/" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` antialiased bg-white`}
       >
+        <Header />
         <Analytics />
         {children}
+        <Footer />
       </body>
     </html>
   );
