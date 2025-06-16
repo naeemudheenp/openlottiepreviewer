@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Online Lottie Previewer",
-  description: "Online Lottie Previewer: Compare and Preview Lottie JSON Animations in Different Players",
+  description: "Easily preview and compare Lottie animations in Online across dark and light themes. Perfect for designers and developers to test Lottie JSON files using lottie-react and react-lottie-player.",
 };
 
 export default function RootLayout({ children }) {
