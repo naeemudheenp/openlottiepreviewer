@@ -24,7 +24,9 @@ export default function LottiePreviewer() {
             </ul>
           </div>
         </section>
-        <LottiePicker />
+        <div className=" h-full w-full  min-h-full">
+          <LottiePicker />
+        </div>
       </div>
 
     </div>
