@@ -6,6 +6,7 @@ export default function Footer() {
         © {new Date().getFullYear()} Open Lottie Previewer. All rights reserved.
       </p>
       <div className="mt-2 space-x-4">
+        <Link aria-label="Blog" href="/blog" className="hover:underline">Blog</Link>
         <Link aria-label="Privacy Policy" href="/privacy" className="hover:underline">Privacy Policy</Link>
         <Link aria-label="Contact" href="/contact" className="hover:underline">Contact</Link>
       </div>

@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import OpenNotepadBanner from "@/components/opennotepad-banner";
 
 
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={` antialiased bg-white min-h-screen  `}
       >
+        <OpenNotepadBanner />
         <Header />
         <Analytics />
         {children}
